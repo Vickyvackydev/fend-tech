@@ -12,13 +12,13 @@ function Quote() {
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="w-[90vw] -mt-16 absolute z-40 p-16 rounded-sm gap-x-5 right-16 space-x-4 shadow-lg bg-white flex items-start justify-center"
+      className="w-[90vw] -mt-16 absolute z-40 lg:p-16 p-5 rounded-sm gap-x-5 gap-y-5 lg:right-16 right-4 space-x-4 shadow-lg bg-white flex lg:flex-row flex-col items-start justify-center"
     >
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 1.1, ease: "easeOut", delay: 0.3 }}
-        className="w-[380px] h-[400px] p-7 flex flex-col gap-y-5 rounded-lg bg-[#FE5208]"
+        className="lg:w-[380px] w-full h-[400px] p-7 flex flex-col gap-y-5 rounded-lg bg-[#FE5208]"
       >
         <div className="flex flex-col gap-y-3 items-start text-white">
           <span className="text-[16px] font-bold">Our Location</span>
@@ -48,65 +48,65 @@ function Quote() {
           merchandise inquiries. Please fill the form below and we’ll respond
           promptly.
         </span>
-        <div className="flex flex-col items-start gap-y-3">
+        <div className="w-full flex flex-col items-start gap-y-3">
           <span className="text-sm font-semibold">Personal Details</span>
-          <div className="w-full grid grid-cols-3 gap-3">
+          <div className="w-full grid lg:grid-cols-3 grid-cols-1 gap-4">
             <input
               type="text"
               placeholder="Name (Your Full Name)"
-              className="outline-none  text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none  text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               placeholder="Company Name"
               type="text"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               type="email"
               placeholder="Email (Your Email Address)"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               type="tel"
               placeholder="Phone (Phone Number)"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               type="text"
               placeholder="Industry / Sector"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
           </div>
         </div>
-        <div className="flex flex-col items-start gap-y-3">
+        <div className="w-full flex flex-col items-start gap-y-3">
           <span className="text-sm font-semibold">Shipment Details</span>
-          <div className="w-full grid grid-cols-3 gap-3">
+          <div className="w-full grid lg:grid-cols-3 grid-cols-1 gap-4">
             <input
               type="text"
               placeholder="Product/Service Needed"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               placeholder="Quantity / Volume (Optional)"
               type="text"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               type="email"
               placeholder="Delivery Location"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               type="tel"
               placeholder="Preferred Delivery Date (Optional)"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
             <input
               type="text"
               placeholder="Additional Details"
-              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+              className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
             />
-            <div className=" text-sm flex items-start text-[#808080] border border-[#E9EAEB] p-3 w-[230px]">
+            <div className=" text-sm flex items-start text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full">
               Additional Details
             </div>
           </div>

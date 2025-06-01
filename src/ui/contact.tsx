@@ -18,7 +18,7 @@ function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" });
   return (
-    <div id="contact" className="w-full h-[630px] relative">
+    <div id="contact" className="w-full lg:h-[630px] h-[1100px] relative">
       {/* Map Layer */}
       <MapContainer
         center={[6.4281, 3.4216]}
@@ -45,14 +45,14 @@ function Contact() {
         initial={{ opacity: 0, y: 60 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="w-[70vw] mt-16 absolute z-40 p-16 rounded-sm gap-x-5 right-1/4 space-x-4 shadow-lg bg-white flex items-start justify-center"
+        className="lg:w-[70vw] w-[90vw] mt-16 absolute z-40 lg:p-16 p-5 rounded-sm gap-x-5 lg:right-1/4 right-5 space-x-4 space-y-4 shadow-lg bg-white flex items-start lg:flex-row flex-col justify-center"
       >
         {/* Contact Info Card */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1.1, ease: "easeOut", delay: 0.3 }}
-          className="w-[380px] h-[400px] p-5 flex flex-col gap-y-5 rounded-lg bg-[#FE5208]"
+          className="lg:w-[380px] w-full h-[400px] p-5 flex flex-col gap-y-5 rounded-lg bg-[#FE5208]"
         >
           <div className="flex flex-col gap-y-3 items-start text-white">
             <span className="text-[16px] font-bold">Our Location</span>
@@ -90,28 +90,28 @@ function Contact() {
             promptly.
           </span>
 
-          <div className="flex flex-col items-start gap-y-3">
+          <div className="flex flex-col items-start gap-y-3 w-full">
             <span className="text-sm font-semibold">Personal Details</span>
-            <div className="w-full grid grid-cols-2 gap-3">
+            <div className="w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-3 gap-5">
               <input
                 type="text"
                 placeholder="Name (Your Full Name)"
-                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
               />
               <input
                 type="text"
                 placeholder="Company Name"
-                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
               />
               <input
                 type="email"
                 placeholder="Email (Your Email Address)"
-                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
               />
               <input
                 type="tel"
                 placeholder="Phone (Phone Number)"
-                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 w-[230px]"
+                className="outline-none text-sm placeholder:text-[#808080] border border-[#E9EAEB] p-3 lg:w-[230px] w-full"
               />
             </div>
           </div>

@@ -8,22 +8,22 @@ function Advert() {
   return (
     <div className="w-full relative h-[538px] overflow-hidden">
       <div className="w-full h-full absolute inset-0">
-        <img src={FEND_IMPORT} alt="" />
+        <img src={FEND_IMPORT} className="w-full h-full object-cover" alt="" />
       </div>
       <div className="absolute inset-0 bg-[#00000099] z-10"></div>
 
-      <div className="absolute flex-col p-20 gap-y-5 inset-0 flex z-40 items-start text-white justify-start">
+      <div className="absolute flex-col lg:p-20 p-10 gap-y-5 inset-0 flex z-40 items-start text-white justify-start">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="absolute flex-col p-20 gap-y-5 inset-0 flex z-40 items-start text-white justify-start"
+          className="absolute flex-col lg:p-20 p-10 gap-y-5 inset-0 flex z-40 items-start text-white justify-start"
         >
           <p className="text-[16px] font-medium text-start">
             Leading the Way in Digitizing Commerce Across Africa
           </p>
-          <span className="text-[32px] font-bold text-start leading-snug">
+          <span className="lg:text-[32px] text-2xl font-bold text-start leading-snug">
             Empowering Your Business with Seamless <br /> Procurement, Export,
             and Merchandise <br /> Solutions
           </span>

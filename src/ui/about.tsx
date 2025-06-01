@@ -23,7 +23,7 @@ function About() {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="p-16 flex items-start space-x-16 justify-between mt-20"
+      className="lg:p-16 p-10 flex items-start lg:flex-row flex-col space-x-16 justify-between lg:mt-20 mt-52"
     >
       <div className="w-full flex flex-col items-start gap-y-5 -mt-10">
         <span className="text-[#FE5208] font-semibold text-[16px]">
@@ -52,7 +52,7 @@ function About() {
         <span className="text-[#FE5208] font-semibold text-[20px]">
           Our Core Business Areas
         </span>
-        <div className="w-full grid grid-cols-2 gap-5">
+        <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-5">
           {services.map((s, i) => (
             <div key={i} className="flex items-center gap-x-2">
               <div className="w-[16px] h-[16px] bg-[#FE5208] rounded-sm rotate-45" />

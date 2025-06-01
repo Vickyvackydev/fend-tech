@@ -12,13 +12,13 @@ function More() {
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="bg-[#F7F7F7] p-20 mt-[35rem] flex flex-col gap-y-10"
+      className="bg-[#F7F7F7] lg:p-20 p-10 lg:mt-[35rem] mt-[85rem] flex flex-col gap-y-10"
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="w-full flex items-center justify-between"
+        className="w-full flex items-center lg:flex-row flex-col justify-between"
       >
         <div className="flex flex-col w-full gap-y-3">
           <span className="text-[#FE5208] text-[16px]">
@@ -28,13 +28,13 @@ function More() {
             Simplifying Procurement & Export Across Africa and Beyond.
           </span>
         </div>
-        <span className="text-[16px] font-medium w-[65vw]">
+        <span className="text-[16px] font-medium lg:w-[65vw] w-full">
           Our extensive network, advanced technology, and expert logistics
           solutions ensure your supply chain operates seamlessly — from sourcing
           to delivery.
         </span>
       </motion.div>
-      <div className="w-full flex items-start gap-x-7">
+      <div className="w-full flex lg:flex-row flex-col gap-y-5 items-start gap-x-7">
         {moreDetails.map((item, index) => (
           <motion.div
             key={index}

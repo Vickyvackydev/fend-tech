@@ -12,7 +12,7 @@ function MainPage() {
   return (
     <>
       <Hero />
-      <div className="w-[70vw] -bottom-14 rounded-sm p-5  right-1/6 space-x-4 shadow-lg bg-white z-40 absolute flex items-center justify-center">
+      <div className="w-[70vw] lg:-bottom-14 -bottom-10 rounded-sm p-5 right-1/6 space-x-4 space-y-4 shadow-lg bg-white z-40 absolute flex items-center lg:flex-row flex-col justify-center">
         <div className="flex items-start gap-x-3">
           <img src={SHOPPING_BAG} className="w-[46.83px] h-[50px]" alt="" />
           <div className="flex flex-col items-start gap-y-1">

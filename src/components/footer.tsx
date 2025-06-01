@@ -22,9 +22,9 @@ const FooterLinks = ({
 );
 function Footer() {
   return (
-    <div className="w-full h-full bg-[#121212] ">
-      <div className="flex items-start justify-between gap-x-10 p-20">
-        <div className="w-[20vw] flex items-start flex-col gap-y-3">
+    <div className="w-full h-full bg-[#121212]">
+      <div className="flex items-start lg:flex-row flex-col  justify-between gap-10 lg:p-20 p-10">
+        <div className="lg:w-[20vw] w-full flex items-start flex-col gap-y-3">
           <img
             src={FEND_FOOTER_LOGO}
             className="w-[122.86px] h-[40px] object-contain"
@@ -39,7 +39,7 @@ function Footer() {
         <FooterLinks title={footer[1].title} links={footer[1].links} />
       </div>
       <div className="flex items-center justify-center border-t border-[#FFFFFF] py-5">
-        <span className="text-sm font-normal text-[#9B9B9B]">
+        <span className="text-sm font-normal text-[#9B9B9B] text-center">
           Copyright © 2025 Fend Technologies Limited, All Right Reserved.
         </span>
       </div>
